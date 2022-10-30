@@ -1,7 +1,7 @@
 .Weather {
   border: 1px solid rgb(208, 208, 208);
   border-radius: 4px;
-  color: rgb(33, 33, 33, 0.7);
+  color: rgb(33, 33, 33, 0.8);
   font-family: Arial, Helvetica, sans-serif;
   padding: 16px;
   margin: 20px 0 0 0;
@@ -22,14 +22,13 @@
   line-height: 16px;
   list-style: none;
 }
-.Weather img {
+.Weather canvas {
   display: inline;
-  height: 66px;
-  margin-right: 10px;
+  margin-top: 2px;
 }
 .Weather .float-left {
   display: inline-block;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 46px;
   vertical-align: bottom;
 }
