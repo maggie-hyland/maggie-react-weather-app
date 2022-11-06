@@ -1,0 +1,4 @@
+# Build daily weather forecast
+1.Build the layout + styling of the forecast
+2.Find the API & make the API call for the forecast
+3.Integrate the API with the interface
