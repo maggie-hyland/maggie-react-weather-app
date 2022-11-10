@@ -1,9 +1,8 @@
-
 @mixin textCenter($background) {
   text-align: center;
   background: $background;
 }
-//Use a @mixin to make a function that stores attributes that can be called upon within an elementlike below. 
+//Use a @mixin to make a function that stores attributes that can be called upon within an elementlike below.
 //This @mixin "textCenter" can be used in this file "_WeatherForecast.scss" or even in the parent file "Style.scss".
 //In the parentheses in "textCenter()" you can add in a variable (or multiple variables) like "$background" which can be changed when @ included in an element's attribute list like "none" below
 
@@ -13,4 +12,16 @@
 }
 .WeatherForecast-temperatures-min {
   opacity: 0.6;
+}
+.WeatherForecastSingleDay {
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin: 2px 0px 16px 0px;
+  &:hover {
+    background: rgb(210, 210, 210, 0.2);
+  }
+}
+.WeatherIcon {
+    padding-left: 8px;
 }

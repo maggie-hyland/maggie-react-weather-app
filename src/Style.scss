@@ -1,44 +1,53 @@
-$searchBtn: rgb(156, 17, 255);
+$mainColor: rgb(156, 17, 255);
 $textColor: #333333;
 @import "./WeatherForecast";
+@import "./App";
 
 .Weather {
   border: 1px solid rgb(208, 208, 208);
   border-radius: 4px;
   color: rgb(33, 33, 33, 0.65);
   font-family: "Poppins", sans-serif;
-  padding: 16px;
-  margin: 20px 0 0 0;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 20px;
   .btn {
-    background: $searchBtn;
+    background: $mainColor;
     color: white;
+    transition: all 0.13s ease-in-out;
+    &:hover {
+      background: rgb(156, 17, 255, 0.7);
+    }
   }
   h1 {
+    color: $mainColor;
+    opacity: 0.8;
     font-size: 28px;
     font-weight: 500;
     line-height: 28px;
-    margin: 20px 0 6px 0;
   }
   ul {
     margin: 0;
     padding: 0;
   }
   li {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
     list-style: none;
   }
   canvas {
     display: inline;
-    margin-top: 2px;
-    margin-right: 3px;
+    margin-right: 10px;
   }
   .float-left {
     color: $textColor;
+    opacity: 0.8;
     display: inline-block;
-    font-size: 50px;
-    line-height: 42px;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 90px;
     vertical-align: bottom;
   }
   .unit {
@@ -50,4 +59,17 @@ $textColor: #333333;
   a {
     text-decoration: none;
   }
+}
+.WeatherInfo {
+  .row {
+    margin-top: 20px;
+  }
+  .listDetails {
+    color: $textColor;
+    font-size: 16px;
+  }
+}
+.WeatherTemperature {
+  margin-top: 10px;
+  line-height: 80px;
 }

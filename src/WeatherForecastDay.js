@@ -31,9 +31,11 @@ function day() {
 }
 
   return (
-    <div>
+    <div className="WeatherForecastSingleDay">
       <div className="WeatherForecast-day">{day()}</div>
-      <WeatherIcon code={props.data.weather[0].icon} size={36} />
+      <div className="WeatherIcon">
+        <WeatherIcon code={props.data.weather[0].icon} size={36} />
+      </div>
       <div className="WeatherForecast-temperatures">
         <span className="WeatherForecast-temperatures-max">
           {maxTemperature()}{" "}
