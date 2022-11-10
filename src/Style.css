@@ -1,10 +1,24 @@
+.WeatherForecast {
+  text-align: center;
+  background: none;
+  margin-top: 15px;
+}
+
+.WeatherForecast-temperatures-min {
+  opacity: 0.6;
+}
+
 .Weather {
   border: 1px solid rgb(208, 208, 208);
   border-radius: 4px;
-  color: rgb(33, 33, 33, 0.65);
-  font-family: 'Poppins', sans-serif;
+  color: rgba(33, 33, 33, 0.65);
+  font-family: "Poppins", sans-serif;
   padding: 16px;
   margin: 20px 0 0 0;
+}
+.Weather .btn {
+  background: rgb(156, 17, 255);
+  color: white;
 }
 .Weather h1 {
   font-size: 28px;
@@ -42,4 +56,4 @@
 }
 .Weather a {
   text-decoration: none;
-}
+}/*# sourceMappingURL=Style.css.map */
