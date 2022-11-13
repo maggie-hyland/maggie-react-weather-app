@@ -4,14 +4,28 @@ $textColor: #333333;
 @import "./App";
 
 .Weather {
-  border: 1px solid rgb(208, 208, 208);
-  border-radius: 4px;
+  border: 2px solid rgb(156, 17, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 2px 1px rgb(156, 17, 255, 0.08);
   color: rgb(33, 33, 33, 0.65);
   font-family: "Poppins", sans-serif;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
   margin-top: 20px;
+  input.form-control {
+    color: white;
+    background: $mainColor;
+    opacity: 0.5;
+    margin-left: 10px;
+    width: 400px;
+  }
+  input::placeholder {
+    color: white;
+  }
+  .row {
+    margin: 4px 4px 0px 0px;
+  }
+  .searchRow {
+    margin-top: 14px;
+  }
   .btn {
     background: $mainColor;
     color: white;
@@ -23,16 +37,15 @@ $textColor: #333333;
   h1 {
     color: $mainColor;
     opacity: 0.8;
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 400;
     line-height: 28px;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
+    padding-top: 8px;
+    margin-left: 14px;
+    margin-bottom: 0;
+    text-shadow: 2px 1px rgb(51, 51, 51, 0.15);
   }
   li {
-    font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     list-style: none;
@@ -41,28 +54,45 @@ $textColor: #333333;
     display: inline;
     margin-right: 10px;
   }
-  .float-left {
+  .mainIcon {
+    display: inline-block;
+    font-size: 56px;
+    line-height: 90px;
+    vertical-align: bottom;
+    margin-left: 13px;
+  }
+  .currentTemp {
     color: $textColor;
-    opacity: 0.8;
+    opacity: 0.95;
     display: inline-block;
     font-size: 56px;
     font-weight: 300;
     line-height: 90px;
     vertical-align: bottom;
-  }
-  .unit {
-    color: $textColor;
-    font-size: 18px;
-    position: relative;
-    top: -22px;
-  }
-  a {
-    text-decoration: none;
+    margin-left: 1px;
   }
 }
+.unit {
+  color: $textColor;
+  font-size: 18px;
+  position: relative;
+  top: -22px;
+}
+a {
+  text-decoration: none;
+}
+
 .WeatherInfo {
   .row {
     margin-top: 20px;
+  }
+  .dateDetails {
+    color: $textColor;
+    font-size: 16px;
+    opacity: 0.5;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    margin: 0;
   }
   .listDetails {
     color: $textColor;
@@ -70,6 +100,5 @@ $textColor: #333333;
   }
 }
 .WeatherTemperature {
-  margin-top: 10px;
   line-height: 80px;
 }
