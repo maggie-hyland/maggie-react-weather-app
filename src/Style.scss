@@ -1,7 +1,7 @@
-$mainColor: rgb(156, 17, 255);
-$textColor: #333333;
 @import "./WeatherForecast";
 @import "./App";
+$mainColor: rgb(156, 17, 255);
+$textColor: #333333;
 
 .Weather {
   border: 2px solid rgb(156, 17, 255, 0.3);
@@ -14,8 +14,14 @@ $textColor: #333333;
     color: white;
     background: $mainColor;
     opacity: 0.5;
-    margin-left: 10px;
-    width: 400px;
+  }
+  /*on very small*/
+  @media (max-width: 290px) {
+    .btn {
+      font-size: 10px;
+      width: 50px;
+      padding: 10px 0px;
+    }
   }
   input::placeholder {
     color: white;
@@ -25,6 +31,15 @@ $textColor: #333333;
   }
   .searchRow {
     margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+  }
+  div.searchForm {
+    padding: none;
+    max-width: 70%;
+  }
+  div.searchBtn {
+    padding: none;
   }
   .btn {
     background: $mainColor;
@@ -54,12 +69,10 @@ $textColor: #333333;
     display: inline;
     margin-right: 10px;
   }
+
   .mainIcon {
-    display: inline-block;
     font-size: 56px;
     line-height: 90px;
-    vertical-align: bottom;
-    margin-left: 13px;
   }
   .currentTemp {
     color: $textColor;
@@ -83,20 +96,53 @@ a {
 }
 
 .WeatherInfo {
-  .row {
-    margin-top: 20px;
+  /*on small*/
+  @media (max-width: 500px) {
+    .row {
+      margin-top: 15px;
+    }
+    .dateDetails {
+      font-size: 13px;
+      padding-top: 5px;
+      padding-bottom: 4px;
+      margin: 0;
+    }
+    .listDetails {
+      font-size: 13px;
+    }
+    div.currentTemp {
+      transform: scale(75%);
+    }
+    div.weatherInfoRow {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  /*on medium-large*/
+  @media (min-width: 500px) {
+    .row {
+      margin-top: 20px;
+    }
+    .dateDetails {
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 4px;
+      margin: 0;
+    }
+    .listDetails {
+      font-size: 16px;
+    }
+  }
+  ul {
+    padding-left: 0;
   }
   .dateDetails {
     color: $textColor;
-    font-size: 16px;
     opacity: 0.5;
-    padding-top: 20px;
-    padding-bottom: 4px;
-    margin: 0;
   }
   .listDetails {
     color: $textColor;
-    font-size: 16px;
   }
 }
 .WeatherTemperature {

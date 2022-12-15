@@ -51,13 +51,19 @@
   color: rgba(33, 33, 33, 0.65);
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
+  /*on very small*/
 }
 .Weather input.form-control {
   color: white;
   background: rgb(156, 17, 255);
   opacity: 0.5;
-  margin-left: 10px;
-  width: 400px;
+}
+@media (max-width: 290px) {
+  .Weather .btn {
+    font-size: 10px;
+    width: 50px;
+    padding: 10px 0px;
+  }
 }
 .Weather input::-moz-placeholder {
   color: white;
@@ -73,6 +79,15 @@
 }
 .Weather .searchRow {
   margin-top: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+.Weather div.searchForm {
+  padding: none;
+  max-width: 70%;
+}
+.Weather div.searchBtn {
+  padding: none;
 }
 .Weather .btn {
   background: rgb(156, 17, 255);
@@ -103,11 +118,8 @@
   margin-right: 10px;
 }
 .Weather .mainIcon {
-  display: inline-block;
   font-size: 56px;
   line-height: 90px;
-  vertical-align: bottom;
-  margin-left: 13px;
 }
 .Weather .currentTemp {
   color: #333333;
@@ -131,20 +143,55 @@ a {
   text-decoration: none;
 }
 
-.WeatherInfo .row {
-  margin-top: 20px;
+.WeatherInfo {
+  /*on small*/
+  /*on medium-large*/
+}
+@media (max-width: 500px) {
+  .WeatherInfo .row {
+    margin-top: 15px;
+  }
+  .WeatherInfo .dateDetails {
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    margin: 0;
+  }
+  .WeatherInfo .listDetails {
+    font-size: 13px;
+  }
+  .WeatherInfo div.currentTemp {
+    transform: scale(75%);
+  }
+  .WeatherInfo div.weatherInfoRow {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 500px) {
+  .WeatherInfo .row {
+    margin-top: 20px;
+  }
+  .WeatherInfo .dateDetails {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    margin: 0;
+  }
+  .WeatherInfo .listDetails {
+    font-size: 16px;
+  }
+}
+.WeatherInfo ul {
+  padding-left: 0;
 }
 .WeatherInfo .dateDetails {
   color: #333333;
-  font-size: 16px;
   opacity: 0.5;
-  padding-top: 20px;
-  padding-bottom: 4px;
-  margin: 0;
 }
 .WeatherInfo .listDetails {
   color: #333333;
-  font-size: 16px;
 }
 
 .WeatherTemperature {
