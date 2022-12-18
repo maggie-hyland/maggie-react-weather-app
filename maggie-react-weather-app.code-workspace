@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../GitHub/vanilla-weather-app"
+	},
+	{
+		"path": "../4 SheCodes Responsive/portfolio-project-maggie-hyland"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "vanilla-weather-app"
+  }
+}
