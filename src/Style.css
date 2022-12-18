@@ -1,7 +1,7 @@
 .WeatherForecast {
   text-align: center;
   background: none;
-  background: rgba(59, 50, 67, 0.04);
+  background: white;
   border-radius: 5px;
   margin: 0 14px 14px 14px;
 }
@@ -12,17 +12,17 @@
 
 .WeatherForecastSingleDay {
   text-align: center;
-  border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  padding-top: 6px;
-  margin: 8px 0px 8px 0px;
 }
 .WeatherForecastSingleDay:hover {
-  background: white;
+  background: rgba(35, 160, 148, 0.05);
+  border-radius: 6px;
+  color: black;
+  transform: scale(1.04);
 }
 .WeatherForecastSingleDay .WeatherForecast-day {
-  color: rgba(156, 17, 255, 0.5);
-  font-weight: 500;
+  color: rgba(35, 160, 148, 0.9);
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -45,40 +45,58 @@
 }
 
 .Weather {
-  border: 2px solid rgba(156, 17, 255, 0.3);
+  border: 8px solid #23a094;
   border-radius: 5px;
-  box-shadow: 2px 1px rgba(156, 17, 255, 0.08);
+  box-shadow: 3px 3px rgba(72, 72, 74, 0.05);
   color: rgba(33, 33, 33, 0.65);
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   margin-top: 20px;
   /*on very small*/
 }
 .Weather input.form-control {
-  color: white;
-  background: rgb(156, 17, 255);
-  opacity: 0.5;
+  color: #333333;
+  background: white;
+  border: 2px solid #23a094;
+  opacity: 0.8;
 }
-@media (max-width: 290px) {
+@media (max-width: 360px) {
   .Weather .btn {
     font-size: 10px;
     width: 50px;
     padding: 10px 0px;
   }
 }
+@media (max-width: 500px) {
+  .Weather h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 575px) {
+  .Weather .btn {
+    width: 110px;
+  }
+  .Weather div.mainIcon {
+    padding-left: 30px;
+  }
+}
 .Weather input::-moz-placeholder {
-  color: white;
+  color: #333333;
+  opacity: 0.7;
 }
 .Weather input:-ms-input-placeholder {
-  color: white;
+  color: #333333;
+  opacity: 0.7;
 }
 .Weather input::placeholder {
-  color: white;
+  color: #333333;
+  opacity: 0.7;
 }
 .Weather .row {
   margin: 4px 4px 0px 0px;
 }
 .Weather .searchRow {
   margin-top: 14px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -86,25 +104,30 @@
   padding: none;
   max-width: 70%;
 }
+.Weather input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(35, 160, 148, 0.3);
+}
 .Weather div.searchBtn {
   padding: none;
 }
 .Weather .btn {
-  background: rgb(156, 17, 255);
+  background: #23a094;
   color: white;
   transition: all 0.13s ease-in-out;
 }
 .Weather .btn:hover {
-  background: rgba(156, 17, 255, 0.7);
+  background: #23a094;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
 }
 .Weather h1 {
-  color: rgb(156, 17, 255);
+  color: #1a766d;
   opacity: 0.8;
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 0;
-  text-shadow: 2px 1px rgba(51, 51, 51, 0.15);
 }
 .Weather li {
   font-weight: 400;
@@ -135,10 +158,12 @@
   font-size: 18px;
   position: relative;
   top: -22px;
+  padding-left: 5px;
 }
 
 a {
   text-decoration: none;
+  color: #1a766d;
 }
 
 .WeatherInfo {
@@ -165,17 +190,20 @@ a {
     transform: scale(75%);
   }
   .WeatherInfo div.weatherInfoRow {
-    margin-top: 10px;
     display: flex;
     justify-content: space-around;
   }
 }
 @media (min-width: 500px) {
-  .WeatherInfo .row {
+  .WeatherInfo .row h1 {
     margin-top: 20px;
+  }
+  .WeatherInfo .row .weatherInfoRow {
+    margin-top: 10px;
   }
   .WeatherInfo h1 {
     font-size: 42px;
+    margin-left: 10px;
   }
   .WeatherInfo .dateDetails {
     font-size: 16px;
@@ -186,11 +214,6 @@ a {
   .WeatherInfo .listDetails {
     font-size: 16px;
   }
-}
-.WeatherInfo h1 {
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
-  padding: none;
 }
 .WeatherInfo ul {
   padding-left: 0;

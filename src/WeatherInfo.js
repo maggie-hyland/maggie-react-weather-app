@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
       <div className="row">
         <h1>{props.data.city}</h1>
         <div className="row weatherInfoRow">
-          <div className="col-5">
+          <div className="col-6">
             <ul className="dateDetails">
               <li>
                 <FormattedDate date={props.data.date} />
@@ -21,7 +21,7 @@ export default function WeatherInfo(props) {
               <li>Wind: {props.data.wind} km/h</li>
             </ul>
           </div>
-          <div className="col-7">
+          <div className="col-6">
             <div className="clearfix">
               <div className="mainIcon">
                 <WeatherIcon

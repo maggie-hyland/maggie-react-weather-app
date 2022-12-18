@@ -8,7 +8,7 @@
 
 .WeatherForecast {
   @include textCenter(none);
-  background: rgba(59, 50, 67, 0.04);
+  background: white;
   border-radius: 5px;
   margin: 0 14px 14px 14px;
 }
@@ -17,16 +17,16 @@
 }
 .WeatherForecastSingleDay {
   text-align: center;
-  border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  padding-top: 6px;
-  margin: 8px 0px 8px 0px;
   &:hover {
-    background: white;
+    background: rgba(35, 160, 148, 0.05);
+    border-radius: 6px;
+    color: black;
+    transform: scale(1.04);
   }
   .WeatherForecast-day {
-    color: rgb(156, 17, 255, 0.5);
-    font-weight: 500;
+    color: rgba(35, 160, 148, 0.9);
+    font-weight: 400;
     font-size: 18px;
   }
 }
