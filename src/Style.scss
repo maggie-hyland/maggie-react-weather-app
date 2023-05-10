@@ -1,5 +1,5 @@
-@import "./WeatherForecast";
-@import "./App";
+@import './WeatherForecast';
+@import './App';
 $mainColor: #ffb54b;
 $textColor: #333333;
 
@@ -8,7 +8,7 @@ $textColor: #333333;
   border-radius: 5px;
   box-shadow: 3px 3px rgb(72, 72, 74, 0.05);
   color: rgb(33, 33, 33, 0.65);
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   margin-top: 20px;
   input.form-control {
     color: $textColor;
@@ -72,7 +72,7 @@ $textColor: #333333;
     }
   }
   h1 {
-    color: #1a766d;
+    color: #ffb54b;
     opacity: 0.8;
     font-size: 42px;
     font-weight: 400;
@@ -114,7 +114,6 @@ $textColor: #333333;
 a {
   text-decoration: none;
   color: #1a766d;
-
 }
 
 .WeatherInfo {
