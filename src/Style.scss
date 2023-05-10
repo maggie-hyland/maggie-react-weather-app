@@ -1,6 +1,6 @@
 @import './WeatherForecast';
 @import './App';
-$mainColor: #ffb54b;
+$mainColor: #8966ce;
 $textColor: #333333;
 
 .Weather {
@@ -72,7 +72,7 @@ $textColor: #333333;
     }
   }
   h1 {
-    color: #ffb54b;
+    color: #8966ce;
     opacity: 0.8;
     font-size: 42px;
     font-weight: 400;
@@ -113,7 +113,7 @@ $textColor: #333333;
 }
 a {
   text-decoration: none;
-  color: #1a766d;
+  color: #9071ce;
 }
 
 .WeatherInfo {
